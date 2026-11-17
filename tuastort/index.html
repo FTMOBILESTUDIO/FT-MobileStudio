@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tu as tort · L'app qui t'explique pourquoi tu as tort</title>
+<meta name="description" content="Écris une affirmation, le J t'explique pourquoi tu as tort.">
+<meta property="og:title" content="Tu as tort">
+<meta property="og:description" content="Écris une affirmation, le J t'explique pourquoi tu as tort.">
+<meta property="og:image" content="https://ftmobilestudio.com/tuastort/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f9;--ink:#0f1e36;--muted:#5b6b82;--blue:#1e6fe8}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif;padding:0 16px}
+main{max-width:480px;margin:0 auto;padding:40px 0;text-align:center}
+img{width:240px;height:240px;border-radius:32px}
+h1{font-size:1.8rem;font-weight:800;margin:20px 0 8px}
+p{color:var(--muted)}
+.btn{display:block;margin:24px auto 10px;max-width:320px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;padding:14px 20px;border-radius:28px}
+.soon{display:block;max-width:320px;margin:0 auto;padding:14px 20px;border-radius:28px;border:1px solid #d5dde8;color:var(--muted)}
+footer{margin-top:40px;font-size:.85rem}
+footer a{color:var(--muted)}
+</style>
+<script>
+// Redirige directement vers le bon store selon le téléphone de la personne qui ouvre le lien.
+(function(){
+  var ua = navigator.userAgent || '';
+  var play = 'https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort';
+  var appStore = ''; // à remplir quand l'app iPhone sera publiée
+  if (/android/i.test(ua)) location.replace(play);
+  else if (/iphone|ipad|ipod/i.test(ua) && appStore) location.replace(appStore);
+})();
+</script>
+</head>
+<body>
+<main>
+  <img src="logo.png" alt="Tu as tort">
+  <h1>Tu as tort</h1>
+  <p>Écris une affirmation. Le J t'explique, calmement, pourquoi tu as tort.</p>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort">Télécharger sur Google Play</a>
+  <span class="soon">Bientôt sur l'App Store</span>
+  <footer><a href="cgu.html">Conditions d'utilisation</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="../">FT Mobile Studio</a></footer>
+</main>
+</body>
+</html>
