@@ -3,44 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tu as tort · L'app qui t'explique pourquoi tu as tort</title>
-<meta name="description" content="Écris une affirmation, le J t'explique pourquoi tu as tort.">
-<meta property="og:title" content="Tu as tort">
-<meta property="og:description" content="Écris une affirmation, le J t'explique pourquoi tu as tort.">
-<meta property="og:image" content="https://ftmobilestudio.com/tuastort/logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#eef3f9;--ink:#0f1e36;--muted:#5b6b82;--blue:#1e6fe8}
-*{box-sizing:border-box;margin:0}
-body{background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif;padding:0 16px}
-main{max-width:480px;margin:0 auto;padding:40px 0;text-align:center}
-img{width:240px;height:240px;border-radius:32px}
-h1{font-size:1.8rem;font-weight:800;margin:20px 0 8px}
-p{color:var(--muted)}
-.btn{display:block;margin:24px auto 10px;max-width:320px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;padding:14px 20px;border-radius:28px}
-.soon{display:block;max-width:320px;margin:0 auto;padding:14px 20px;border-radius:28px;border:1px solid #d5dde8;color:var(--muted)}
-footer{margin-top:40px;font-size:.85rem}
-footer a{color:var(--muted)}
-</style>
+<title>Tu as tort : l'app qui te contredit à tous les coups | FT Mobile Studio</title>
+<meta name="description" content="Écris une affirmation, même évidente. Tu as tort te répond « bah tu as tort », trouve le contre-exemple qui la renverse et te le dit à voix haute.">
+<link rel="canonical" href="https://ftmobilestudio.com/tuastort/">
+<link rel="alternate" hreflang="fr" href="https://ftmobilestudio.com/tuastort/"><link rel="alternate" hreflang="en" href="https://ftmobilestudio.com/en/tuastort/"><link rel="alternate" hreflang="x-default" href="https://ftmobilestudio.com/tuastort/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FT Mobile Studio">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Tu as tort : l'app qui te contredit à tous les coups | FT Mobile Studio">
+<meta property="og:description" content="Écris une affirmation, même évidente. Tu as tort te répond « bah tu as tort », trouve le contre-exemple qui la renverse et te le dit à voix haute.">
+<meta property="og:url" content="https://ftmobilestudio.com/tuastort/">
+<meta property="og:image" content="https://ftmobilestudio.com/tuastort/img/banniere.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#061D3D">
+<link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="/assets/brand/favicon-64.png" sizes="64x64" type="image/png"><link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=8">
+<script src="/assets/site.js?v=4" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "MobileApplication", "name": "Tu as tort", "operatingSystem": "Android", "applicationCategory": "EntertainmentApplication", "description": "Écris une affirmation, même évidente. Tu as tort te répond « bah tu as tort », trouve le contre-exemple qui la renverse et te le dit à voix haute.", "url": "https://ftmobilestudio.com/tuastort/", "installUrl": "https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort", "image": "https://ftmobilestudio.com/tuastort/img/banniere.jpg", "inLanguage": "fr", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "author": {"@type": "Organization", "name": "FT Mobile Studio", "url": "https://ftmobilestudio.com/"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "L'application est-elle gratuite ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui. Jusqu'à 10 réponses par jour : 6 gratuites, puis 2 de plus pour chaque courte vidéo regardée (2 vidéos maximum). L'application affiche de la publicité."}}, {"@type": "Question", "name": "Peut-il me donner raison ?", "acceptedAnswer": {"@type": "Answer", "text": "Jamais. C'est tout le principe."}}, {"@type": "Question", "name": "Les réponses sont-elles fiables ?", "acceptedAnswer": {"@type": "Answer", "text": "Il cherche un contre-exemple réel ; quand il n'en existe pas, il assume une pirouette de mauvaise foi. C'est un jeu : ne prends jamais ses réponses comme un conseil."}}, {"@type": "Question", "name": "Dans quelle langue répond-il ?", "acceptedAnswer": {"@type": "Answer", "text": "En français."}}, {"@type": "Question", "name": "Est-elle disponible sur iPhone ?", "acceptedAnswer": {"@type": "Answer", "text": "Bientôt. Elle est déjà disponible sur Android, via Google Play."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://ftmobilestudio.com/"}, {"@type": "ListItem", "position": 2, "name": "Tu as tort", "item": "https://ftmobilestudio.com/tuastort/"}]}]}</script>
 <script>
-// Redirige directement vers le bon store selon le téléphone de la personne qui ouvre le lien.
-(function(){
-  var ua = navigator.userAgent || '';
-  var play = 'https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort';
-  var appStore = ''; // à remplir quand l'app iPhone sera publiée
-  if (/android/i.test(ua)) location.replace(play);
-  else if (/iphone|ipad|ipod/i.test(ua) && appStore) location.replace(appStore);
-})();
+(function(){var u=navigator.userAgent||'',r=document.referrer||'';
+if(/android/i.test(u)&&!/bot|google|crawl|spider|lighthouse/i.test(u)&&r.indexOf('ftmobilestudio.com')<0)location.replace('https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort');})();
 </script>
 </head>
-<body>
-<main>
-  <img src="logo.png" alt="Tu as tort">
-  <h1>Tu as tort</h1>
-  <p>Écris une affirmation. Le J t'explique, calmement, pourquoi tu as tort.</p>
-  <a class="btn" href="https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort">Télécharger sur Google Play</a>
-  <span class="soon">Bientôt sur l'App Store</span>
-  <footer><a href="cgu.html">Conditions d'utilisation</a> · <a href="confidentialite.html">Confidentialité</a> · <a href="../">FT Mobile Studio</a></footer>
+<body id="top">
+<a class="skip" href="#main">Aller au contenu</a>
+<header><div class="wrap">
+<a class="logo" href="/"><img src="/assets/brand/logo-horizontal.svg" width="798" height="324" alt="FT Mobile Studio"></a>
+<nav aria-label="Navigation">
+<a href="/#applications">Applications</a>
+<a class="opt" href="/#studio">Le studio</a>
+<a class="opt" href="/#contact">Contact</a>
+<a class="lang" href="/en/tuastort/" hreflang="en" lang="en">EN</a>
+</nav></div></header>
+<main id="main">
+<section class="hero short"><div class="grid-bg"></div><div class="fade"></div><div class="wrap">
+<p class="crumb"><a href="/">FT Mobile Studio</a> / Tu as tort</p>
+<div class="apphead"><img class="icon" src="/tuastort/img/icone.png" width="72" height="72" alt="Tu as tort"></div>
+<h1 class="rv">Tu as tort, l'app qui a toujours raison</h1>
+<p class="lead rv" data-d="150">Écris une affirmation, même la plus évidente. Il te répond « bah tu as tort », trouve le contre-exemple qui la renverse, et te le dit à voix haute, avec un calme agaçant.</p>
+<div class="btns rv" data-d="300"><a class="btn light" href="https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10.2-9.5L4 2.5Zm11.6 10.8-2.2 2-7 6.5 11.9-6.6-2.7-1.9Zm0-2.6 2.7-1.9L6.4 2.2l7 6.5 2.2 2Zm1.4 1.3 3.2-1.8c.9-.5.9-1.9 0-2.4l-3.2-1.8-2.8 2.6 2.8 2.6v.8Z"/></svg>Télécharger sur Google Play</a></div>
+<p class="note rv" data-d="300">Gratuit · Android · Bientôt sur iPhone</p>
+</div></section>
+<section class="line" aria-label="Aperçu"><div class="wrap">
+<div class="gallery tall"><img src="/tuastort/img/capture-1.jpg" alt="Écran d'accueil : écris ton affirmation à réfuter" loading="lazy" width="864" height="1536"><img src="/tuastort/img/capture-2.jpg" alt="Réponse : bah tu as tort, suivie du contre-exemple" loading="lazy" width="864" height="1536"><img src="/tuastort/img/capture-3.jpg" alt="Débat : il ne lâche jamais" loading="lazy" width="864" height="1536"></div>
+</div></section>
+<section class="line"><div class="wrap">
+<h2 class="rv">Fonctionnalités</h2>
+<div class="feats"><div class="card rv"><h3>Il contredit tout</h3><p>Même « deux plus deux font quatre ». Il trouve toujours un angle : un contre-exemple réel ou, à défaut, une mauvaise foi assumée.</p></div><div class="card rv"><h3>Des faits, pas des inventions</h3><p>Chaque réponse cherche un exemple vrai et précis. Pas de chiffre inventé, pas de propos blessant.</p></div><div class="card rv"><h3>Écoute-le</h3><p>Une voix grave et posée lit chaque réponse, avec un sourire satisfait.</p></div><div class="card rv"><h3>Le débat continue</h3><p>Ajoute ton « pourquoi » et relance : il trouve un autre angle. Il ne te donnera jamais raison.</p></div><div class="card rv"><h3>Partage tes défaites</h3><p>Envoie la capture d'une réponse à tes amis, pour qu'ils découvrent à leur tour pourquoi ils ont tort.</p></div><div class="card rv"><h3>Tape ou dicte</h3><p>Écris ton affirmation ou dicte-la avec le micro du clavier.</p></div></div>
+<div class="btns"><a class="btn play" href="https://play.google.com/store/apps/details?id=com.ftmobilestudio.tuastort" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.5v19l10.2-9.5L4 2.5Zm11.6 10.8-2.2 2-7 6.5 11.9-6.6-2.7-1.9Zm0-2.6 2.7-1.9L6.4 2.2l7 6.5 2.2 2Zm1.4 1.3 3.2-1.8c.9-.5.9-1.9 0-2.4l-3.2-1.8-2.8 2.6 2.8 2.6v.8Z"/></svg>Télécharger sur Google Play</a></div>
+</div></section>
+<section class="line"><div class="wrap">
+<h2 class="rv">Questions fréquentes</h2>
+<div class="faq"><details><summary>L'application est-elle gratuite ?</summary><p>Oui. Jusqu'à 10 réponses par jour : 6 gratuites, puis 2 de plus pour chaque courte vidéo regardée (2 vidéos maximum). L'application affiche de la publicité.</p></details><details><summary>Peut-il me donner raison ?</summary><p>Jamais. C'est tout le principe.</p></details><details><summary>Les réponses sont-elles fiables ?</summary><p>Il cherche un contre-exemple réel ; quand il n'en existe pas, il assume une pirouette de mauvaise foi. C'est un jeu : ne prends jamais ses réponses comme un conseil.</p></details><details><summary>Dans quelle langue répond-il ?</summary><p>En français.</p></details><details><summary>Est-elle disponible sur iPhone ?</summary><p>Bientôt. Elle est déjà disponible sur Android, via Google Play.</p></details></div>
+<div class="social" style="margin-top:28px"><a href="/tuastort/cgu.html">Conditions d'utilisation</a><a href="/tuastort/confidentialite.html">Confidentialité</a></div>
+</div></section>
+<section class="line"><div class="wrap">
+<h2 class="rv">Nos autres applications</h2>
+<div class="apps">
+<article class="card rv"><img class="icon" src="/patrimoney/img/icone.png" width="56" height="56" alt=""><h3>Patrimoney</h3><p>Suivez votre patrimoine net, vos placements et leur fiscalité, puis projetez-vous à 20 ans. Sans compte, vos données restent sur votre téléphone.</p><div class="links"><a href="/patrimoney/">Découvrir →</a></div></article>
+<article class="card rv"><img class="icon" src="/racereflex/img/icone.png" width="56" height="56" alt=""><h3>Race Reflex</h3><p>Cinq feux s'allument, ils s'éteignent : réagissez. Mesurez vos réflexes au millième, en solo, entre amis ou contre le monde entier.</p><div class="links"><a href="/racereflex/">Découvrir →</a></div></article>
+<article class="card rv"><svg class="icon" viewBox="0 0 108 108" role="img" aria-label="Buy&amp;Track"><rect width="108" height="108" fill="#3D3529"/><g transform="translate(25.2 25.2) scale(.6)" fill="none" stroke-linejoin="round"><path d="M14,47 L45,16 A6,6 0 0,1 49.2,14.2 H76 A6,6 0 0,1 82,20.2 V47 A6,6 0 0,1 80.2,51.2 L49,82.2 A6,6 0 0,1 40.5,82.2 L14,55.5 A6,6 0 0,1 14,47 Z" stroke="#F3EEE3" stroke-width="7"/><circle cx="66" cy="31" r="5" fill="#F3EEE3"/><path d="M33,52 L42,61 L56,46" stroke="#F2762E" stroke-width="8" stroke-linecap="round"/></g></svg><h3>Buy&amp;Track</h3><p>Gardez vos achats, factures et garanties au même endroit, avec leurs photos, pour les retrouver au bon moment.</p><div class="links"><a href="https://play.google.com/store/apps/details?id=fr.buytrack.app" rel="noopener">Google Play ↗</a></div></article>
+</div>
+</div></section>
 </main>
+<footer><div class="wrap">
+<div><a class="logo" href="/"><img src="/assets/brand/logo-horizontal.svg" width="798" height="324" alt="FT Mobile Studio"></a><br>Marseille, France · <a href="mailto:contact@ftmobilestudio.com">contact@ftmobilestudio.com</a> · <a href="/mentions-legales.html">Mentions légales</a><br>© 2026 FT Mobile Studio</div>
+<div class="social round"><a href="https://www.linkedin.com/company/146948475/" rel="noopener" aria-label="LinkedIn FT Mobile Studio" title="LinkedIn FT Mobile Studio"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a><details class="pick"><summary aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></summary><div class="menu"><a href="https://www.instagram.com/patrimoney.app/" rel="noopener">Patrimoney</a><a href="https://www.instagram.com/racereflex.app/" rel="noopener">Race Reflex</a></div></details><details class="pick"><summary aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07Z"/></svg></summary><div class="menu"><a href="https://www.tiktok.com/@patrimoney.app" rel="noopener">Patrimoney</a><a href="https://www.tiktok.com/@racereflex.app" rel="noopener">Race Reflex</a></div></details></div>
+</div></footer>
 </body>
 </html>
